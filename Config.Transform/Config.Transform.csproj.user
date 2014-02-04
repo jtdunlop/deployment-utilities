@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>"-setParam:name=%27Market Upload Service Endpoint%27,value=%27epm-services-ci%27" "-setParam:name=%27Deployment Codebase%27,value=%27http://epmstorage.blob.core.windows.net/marketuploader-ci/EPM.MarketUploader.application%27"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>-workingDirectory:foo "-setParam:name=%27Market Upload Service Endpoint%27,value=%27epm-services-ci%27" -v -recursive "-setParam:name=%27Deployment Codebase%27,value=%27epm-services-ci%27"</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishUrlHistory>foo\|publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

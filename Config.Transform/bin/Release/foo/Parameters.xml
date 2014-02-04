@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<parameters>
+	<parameter name="Market Upload Service Endpoint">
+		<parameterEntry kind="XmlFile" scope="test.config$" match="/configuration/system.serviceModel/client/endpoint/@address"/>
+	</parameter>
+	<parameter name="Deployment Codebase">
+		<parameterEntry kind="XmlFile" scope="/test.application$" match="/*[local-name()='assembly']/*[local-name()='deployment']/*[local-name()='deploymentProvider']/@codebase"/>
+	</parameter>
+</parameters>
+
