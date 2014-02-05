@@ -15,6 +15,7 @@ namespace DBSoft.Config.Transform
 		static bool _verbose;
 		static string _workingDirectory = ".";
 		static bool _recursive;
+
 		static void Main(string[] args)
 		{
 			if (!args.Any())
